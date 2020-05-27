@@ -39,8 +39,8 @@
                   Organizações
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="#">Login</a>
-                  <a class="dropdown-item" href="#">Cadastre-se</a>
+                  <a class="dropdown-item" href="loginOrganizações.html">Login</a>
+                  <a class="dropdown-item" href="cadastro_organi.html">Cadastre-se</a>
                 </div>
               </li>
           </ul>
@@ -53,30 +53,30 @@
       </div>
       <div id="cards" class="card-deck">
         <div class="card">
-          <img src="..." class="card-img-top" alt="Logo da empresa..">
+          <img src="imagens/trabalhoPraia.png" class="card-img-top" alt="Logo da empresa..">
           <div class="card-body">
-            <h5 class="card-title">Nome da empresa</h5>
-            <p class="card-text">Hora : <br> Data : <br> Local : </p>
-            <p class="card-text"><small class="text-muted">Descrição..</small></p>
-            <a class="btn btn-primary btn-lg mx-auto d-block" href="#" role="button">Participar</a>
+            <h5 class="card-title">speed contruções</h5>
+            <p class="card-text">Hora : 11:00 ás 14:00 <br> Data : 05/07 <br> Local : Boa viagem </p>
+            <p class="card-text"><small class="text-muted">Coletar lixo na praia .</small></p>
+            <button id="participar1" class="btn btn-dark btn-lg  mx-auto d-block" href="#" role="button">Participar</button>
           </div>
         </div>
         <div class="card">
-          <img src="..." class="card-img-top" alt="Logo da empresa..">
+          <img src="imagens/trabalhoPedreiro.png" class="card-img-top" alt="Logo da empresa..">
           <div class="card-body">
-            <h5 class="card-title">Nome da empresa</h5>
-            <p class="card-text">Hora : <br> Data : <br> Local : </p>
-            <p class="card-text"><small class="text-muted">Descrição..</small></p>
-            <a class="btn btn-primary btn-lg  mx-auto d-block" href="#" role="button">Participar</a>
+            <h5 class="card-title">Red frios</h5>
+            <p class="card-text">Hora : 11:00 ás 17:00 <br> Data : 11/07 <br> Local : Bairro da iputinga  </p>
+            <p class="card-text"><small class="text-muted">Prestar serviços de pedreiro.</small></p>
+            <button id="participar2" class="btn btn-dark btn-lg  mx-auto d-block" href="#" role="button">Participar</button>
           </div>
         </div>
         <div class="card">
-          <img src="..." class="card-img-top" alt="Logo da empresa..">
+          <img src="imagens/trabalhoEmprego.jpg" class="card-img-top" alt="Logo da empresa..">
           <div class="card-body">
-            <h5 class="card-title">Nome da empresa</h5>
-            <p class="card-text">Hora : <br> Data : <br> Local : </p>
-            <p class="card-text"><small class="text-muted">Descrição..</small></p>
-            <a class="btn btn-primary btn-lg  mx-auto d-block" href="#" role="button">Participar</a>
+            <h5 class="card-title">Escola esperança</h5>
+            <p class="card-text">Hora : 11:00 ás 19:00 <br> Data : 01/07 <br> Local : Bairro de casa amarela.</p>
+            <p class="card-text"><small class="text-muted">Dar aulas de tecnologias.</small></p>
+            <button id="participar3" class="btn btn-dark btn-lg  mx-auto d-block" href="#" role="button">Participar</button>
           </div>
         </div>
       </div>
@@ -88,7 +88,24 @@
         <a href="#" class="fa fa-google"></a>
       <a href="#" class="fa fa-instagram"></a>
     </div>
-
-    
 </body>
+<script>
+
+  function participe(){
+
+    alert(" Você escolheu um ótimo evento, aguarde nossa confirmação. Enviaremos um email.")
+
+  }
+
+
+  var listaBotao = document.getElementsByClassName("btn"); 
+
+ for (let index = 0; index < listaBotao.length; index++) {
+ 
+   const botao = listaBotao[index];
+ 
+   botao.addEventListener("click",participe);
+ }
+
+</script> 
 </html>
