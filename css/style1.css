@@ -101,28 +101,3 @@ div h1{
 
 }
 
-  form{
-      font-size:16px;
-      background:#CCC;
-      max-width: 500px;
-      margin:0 auto;
-      padding: 0 10px 10px 10px;
-
-  }
-
-  input, textarea{
-      width: :470px;
-      padding: 10px;
-  }
-  
-  .concluir input{
-      background: rgb(0, 0, 0);
-      height:  40px;
-      width: 150px;
-      font-weight:  bold;
-      border-radius: 1px solid;
-      color: #CCC;
-      cursor: pointer;
-      
-
-  }
