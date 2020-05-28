@@ -1,19 +1,10 @@
 .container {
-    position: relative;
-<<<<<<< HEAD
-    margin:auto;
 
-  
-=======
->>>>>>> 7fc3b1174bc83bc848caf2cf15f0eccd49bb2f70
   
   }
   nav{
     background: transparent !important;
-<<<<<<< HEAD
-    margin:auto;
- 
-=======
+
 >>>>>>> 7fc3b1174bc83bc848caf2cf15f0eccd49bb2f70
   }
 
@@ -23,18 +14,11 @@
 .bg-image {
   /* The image used */
   background-image: url("../imagens/virtusHome.jpg")!important;
-<<<<<<< HEAD
-  margin:auto;
+
+
   
   
- 
-=======
-  
-  
-  /* Add the blur effect */
-  filter: blur(1px);
-  -webkit-filter: blur(1px);
->>>>>>> 7fc3b1174bc83bc848caf2cf15f0eccd49bb2f70
+
   
   /* Full height */
   height: 100%; 
@@ -43,14 +27,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-<<<<<<< HEAD
-  
-  
-  
-}
-=======
->>>>>>> 7fc3b1174bc83bc848caf2cf15f0eccd49bb2f70
-}
+
 
 nav{
   width: 100%;
@@ -102,29 +79,21 @@ footer{
 
 
 /* Position text in the middle of the page/image */
-<<<<<<< HEAD
-  
 .bg-text {
   
-  background-size: cover;
-=======
-.bg-text {
->>>>>>> 7fc3b1174bc83bc848caf2cf15f0eccd49bb2f70
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
-  color: white;
-  font-weight: bold;
-<<<<<<< HEAD
-  z-index: 2;
-  box-shadow: 1px 5px 30px rgb(195,195,195);
-  background-size: cover;
-  background-repeat: no-repeat;
-  
-  padding: 20px;
- 
-  
-}
-
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+  }
 div h1{
   font-family: 'Ubuntu', sans-serif;
   margin:auto;
@@ -141,20 +110,33 @@ div h1{
 }
 div h1{
   font-family: 'Ubuntu', sans-serif;
->>>>>>> 7fc3b1174bc83bc848caf2cf15f0eccd49bb2f70
-}
+>>>>>>> 7fc3b1174bc83bc848caf2cf15f0eccd49bb2f70}
 .footer {
   padding: 20px;
   text-align: center;
   background: #ddd;
 
 }
-<<<<<<< HEAD
+#titulo{
+  font-family: 'Comfortaa', cursive;
 
-
-  
- 
-=======
+}
+#sub{
+  font-family: 'Comfortaa', cursive;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: .25rem;
+  margin: 0;
+  padding-bottom: 1.75rem
+}
+.my-4{
+  margin: auto;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 1px;
+}
 #titulo{
   font-family: 'Comfortaa', cursive;
 
@@ -176,4 +158,4 @@ div h1{
     height: 1px;
 }
 
->>>>>>> 7fc3b1174bc83bc848caf2cf15f0eccd49bb2f70
+
