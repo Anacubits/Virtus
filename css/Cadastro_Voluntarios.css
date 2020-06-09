@@ -10,7 +10,7 @@
   }
   
   body {
-    background-color: #92eef5;
+    background-color: #ffffff;
     font-family: Roboto, Arial, sans-serif;
   }
   
@@ -25,12 +25,12 @@
     font-size: 32px;
     letter-spacing: 1px;
     margin: 20px 0;
-    color: white;
+    color: rgb(0, 0, 0);
   }
   
   form {
     margin: 20px 0;
-    background-color: white;
+    background-color: rgb(70, 68, 68);
     padding: 100px 150px;
     border-radius: 5px;
   }
@@ -41,7 +41,7 @@
   
   form .input-block label {
     font-size: 14px;
-    color: darkslateblue;
+    color: rgb(0, 0, 0);
   }
   
   form .input-block input {
@@ -50,17 +50,17 @@
     margin-top: 8px;
     padding: 7px;
     font-size: 16px;
-    color:  #7159c1;
+    color:  #000000;
     border-radius: 2px;
     border: 1px solid #ccddef;
-    outline-color: #92eef5;
+    outline-color: #000000;
   }
   
   form .btn-cadastro {
     display: block;
     min-width: 120px;
     border: none;
-    background-color: #92eef5;
+    background-color: #000000;
     color: white;
     border-radius: 25px;
     margin: auto;
@@ -72,18 +72,6 @@
     border-radius: spx;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
-  }
-  textarea{
-    height: 200px;
-    width: 100%;
-    display: block;
-    margin-top: 8px;
-    padding: 7px;
-    font-size: 16px;
-    color: #000000;
-    border-radius: 2px;
-    border: 1px solid #ccddef;
-    outline-color: #15ff00;
   }
   
   /* APARIÇÃO DO FORM */

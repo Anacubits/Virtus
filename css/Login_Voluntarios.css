@@ -10,7 +10,7 @@
   }
   
   body {
-    background-color: #7159c1;
+    background-color: #ffffff;
     font-family: Roboto, Arial, sans-serif;
   }
   
@@ -25,13 +25,13 @@
     font-size: 32px;
     letter-spacing: 1px;
     margin: 20px 0;
-    color: white;
+    color: rgb(0, 0, 0);
   }
   
   form {
     margin: 20px 0;
-    background-color: white;
-    padding: 30px 25px;
+    background-color: rgb(70, 68, 68);
+    padding: 55px 35px;
     border-radius: 5px;
   }
   
@@ -41,7 +41,7 @@
   
   form .input-block label {
     font-size: 14px;
-    color: darkslateblue;
+    color: rgb(0, 0, 0);
   }
   
   form .input-block input {
@@ -50,17 +50,17 @@
     margin-top: 8px;
     padding: 7px;
     font-size: 16px;
-    color: #7159c1;
+    color: #000000;
     border-radius: 2px;
-    border: 1px solid #ccddef;
-    outline-color: #7159c1;
+    border: 1px solid #000000;
+    outline-color: #000000;
   }
   
   form .btn-login {
     display: block;
     min-width: 120px;
     border: none;
-    background-color: #7159c1;
+    background-color: #000000;
     color: white;
     border-radius: 25px;
     margin: auto;
