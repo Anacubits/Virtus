@@ -8,6 +8,7 @@
     <title>Virtus</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="css/Cadastro_Voluntarios.css" />
+    <script src=".././virtus/script/validacoesVoluntarios.js" ></script>
 
   </head>
   <body>
@@ -52,29 +53,49 @@
       </div>
     </nav>
 
-    <section class="form-section">
-      <h1>Cadastro Vountários</h1>
-
+ 
+      <div class="jumbotron">
+        <h1 class="display-4">Cadastro de voluntários</h1>
+        <hr class="my-4">
+      </div>
+  
+      <section class="form-section">
       <div class="form-wrapper">
         <form action="">
           <div class="input-block">
-            <input required type="email" class="field" name="E-mail" placeholder="Digite um E-mail" ></div>
+            E-mail
+            <input required type="email" class="field" name="E-mail" placeholder="Ex : julie@gmail.com"  
+            tabindex="5"></div>
             <div class="input-block">
-            <input required type="password" class="field" name="Senha" placeholder="Digite uma senha"></div>
-        
+              <div class="input-block">
+                <input required type="email" class="field" name="E-mail" placeholder="Ex : Confime seu E-mail" ></div>
+               Crie uma senha
+               <p id="senha"></p>
+                <input required id="primeiraSenha"  type="password" class="field" name="Senha" onchange="validarSenha()" placeholder="Ex : Digite uma senha" minlength="5" maxlength="5">        
+                <input required id="segundaSenha" type="password" class="field" name="Senha" onchange="validarSenha()" placeholder="Ex : Digite novamente a senha" minlength="5" maxlength="5">        
+            <br>
             <div class="input-block">
-            <input required type="number" class="field" name="CNPJ" placeholder="Digite seu CPF"></div>
+              CNPJ 
+              <p id="cnpj"></p>
+            <input required id="Cnpj" onchange="validarCnpj()" type="number" class="field" name="CNPJ" placeholder="Ex : 02. 000. 852/852-36"></div>
             
             <div class="input-block">
-          <input required type="number" class="field" name="Telefone" placeholder="Digite seu Telefone"></div>
-            <div class="input-block">
-            <input required type="text" class="field" name="Cidade" placeholder="Digite sua Cidade"></div>
+              Telefone
+              <span class="info" >(necessário)</span>
+              <p id="contato"></p>
+           <input required id="telefone"  type="number" name="Dia"  onchange="validarTelefone()"  name="Telefone" placeholder="Ex : 98555-5555"></div>
+            
+           <div class="input-block">
+             Cidade
+            <input required type="text" class="field" name="Cidade" placeholder="Ex : Pernambuco"></div>
             
             <div class="input-block">
-            <input required type="text" class="field" name="Endereço" placeholder="Digite seu endereço">
+              Endereço
+            <input required type="text" class="field" name="Endereço" placeholder="Ex : lago">
           </div>
+          
             
-            <button type="submit" class="btn-cadastro">Cadastrar</button> 
+            <button type="button " onclick="validarFormBtn()" class="btn-cadastro">Cadastrar</button> 
         </form>
       </div>
     </section>
@@ -90,7 +111,5 @@
       <a href="#" class="fa fa-google"></a>
     <a href="#" class="fa fa-instagram"></a>
   </div>
-  </body>
-  </html>
   </body>
 </html>

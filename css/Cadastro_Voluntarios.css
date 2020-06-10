@@ -4,15 +4,9 @@
     padding: 0;
   }
   
-  html,
-  body {
-    height: 100vh;
-  }
+
   
-  body {
-    background-color: #ffffff;
-    font-family: Roboto, Arial, sans-serif;
-  }
+
   
   section {
     display: flex;
@@ -20,14 +14,7 @@
     justify-content: center;
     align-items: center;
   }
-  
-  h1 {
-    font-size: 32px;
-    letter-spacing: 1px;
-    margin: 20px 0;
-    color: rgb(0, 0, 0);
-  }
-  
+
   form {
     margin: 20px 0;
     background-color: rgb(70, 68, 68);
@@ -91,9 +78,26 @@
       transform: scale(1);
     }
   }
+  p{
+    color: white;
+  }
+  .jumbotron{
+
+
+    background-color: gray;
+    border: #77ecec99  solid 1px!important;
+    border-radius: .3rem!important;
+    color:black;
+
+
+
+}
+ form{
+   background-color:grey ;
+   border:blank 2px;
+ } 
   
-  
-  
+
   
   .footer {
     padding: 20px;

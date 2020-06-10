@@ -9,10 +9,7 @@
     height: 100vh;
   }
   
-  body {
-    background-color: #ffffff;
-    font-family: Roboto, Arial, sans-serif;
-  }
+
   
   section {
     display: flex;

@@ -22,10 +22,20 @@ section {
 }
 
 h1 {
-  font-size: 32px;
+
   letter-spacing: 1px;
   margin: 20px 0;
   color: rgb(0, 0, 0);
+}
+.jumbotron{
+
+
+  background-color: #77ecec2b!important;
+  border: #77ecec99  solid 1px!important;
+  border-radius: .3rem!important;
+
+
+
 }
 
 form {
