@@ -21,11 +21,15 @@ section {
   align-items: center;
 }
 
-h1 {
-  font-size: 32px;
-  letter-spacing: 1px;
-  margin: 20px 0;
-  color: rgb(0, 0, 0);
+.jumbotron{
+
+
+  background-color: #d4edda!important;
+  border: #c3e6cb solid 1px!important;
+  border-radius: .3rem!important;
+  color: #252926!important;
+  font-family:  sans-serif;
+
 }
 
 form {
