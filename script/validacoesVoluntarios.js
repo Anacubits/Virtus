@@ -20,7 +20,7 @@ function validarTelefone() {
 
     if(primeiraSenha != segundaSenha){
      document.getElementById("senha").innerText= "senhas incompatíveis";
-     return false;
+     return false
 
     }else{
         document.getElementById("senha").innerText= ""; 
@@ -35,7 +35,7 @@ function validarTelefone() {
 
         if(Cnpj.length != 14){
         document.getElementById("cnpj").innerText= "Cnpj inválido";
-        return false;
+        return false
 
         }else{
             document.getElementById("cnpj").innerText= ""; 
@@ -44,6 +44,26 @@ function validarTelefone() {
         
 
    }
+   function validarEmail(){
+
+    let primeiroEmail= document.getElementById("primeiroEmail").value;
+    let segundoEmail= document.getElementById("segundoEmail").value;
+
+
+    if(primeiroEmail != segundoEmail){
+        document.getElementById("E-mail").innerText= "E-mail incompatível";
+        return false;
+
+        }else{
+            document.getElementById("E-mail").innerText= ""; 
+    
+        }
+        
+
+    }
+    
+
+ 
 
 
 
@@ -60,7 +80,11 @@ function validarFormBtn(){
     }
 
     if(!validarCnpj()){
-        alert("Cnpj inválido")
+        alert("Cnpj inválido");
+        return false;
+    }
+    if (!validarEmail()){
+        alert("E-mail inválido")
         return false;
     }
 }

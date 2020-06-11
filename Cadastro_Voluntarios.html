@@ -16,6 +16,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Raleway&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,44 +55,45 @@
     </nav>
 
  
-      <div class="jumbotron">
-        <h1 class="display-4">Cadastro de voluntários</h1>
-        <hr class="my-4">
-      </div>
+
   
       <section class="form-section">
       <div class="form-wrapper">
-        <form action="">
+        <form name="form1" action="enviar" method="post">
+     <h1>Cadastro de voluntários</h1>
+
+     <br>
           <div class="input-block">
-            E-mail
-            <input required type="email" class="field" name="E-mail" placeholder="Ex : julie@gmail.com"  
+            E-mail :
+            <p id="E-mail"></p>
+            <input required id ="primeiroEmail" onchange="validarEmail()" type="email" class="field" name="E-mail" placeholder="Ex : julie@gmail.com"  
             tabindex="5"></div>
             <div class="input-block">
               <div class="input-block">
-                <input required type="email" class="field" name="E-mail" placeholder="Ex : Confime seu E-mail" ></div>
-               Crie uma senha
+                <input required id="segundoEmail" onchange="validarEmail()" type="email" class="field" name="E-mail" placeholder="Ex : Confime seu E-mail" ></div>
+               Crie uma senha :
                <p id="senha"></p>
                 <input required id="primeiraSenha"  type="password" class="field" name="Senha" onchange="validarSenha()" placeholder="Ex : Digite uma senha" minlength="5" maxlength="5">        
                 <input required id="segundaSenha" type="password" class="field" name="Senha" onchange="validarSenha()" placeholder="Ex : Digite novamente a senha" minlength="5" maxlength="5">        
             <br>
             <div class="input-block">
-              CNPJ 
+              Cnpj :
               <p id="cnpj"></p>
             <input required id="Cnpj" onchange="validarCnpj()" type="number" class="field" name="CNPJ" placeholder="Ex : 02. 000. 852/852-36"></div>
             
             <div class="input-block">
-              Telefone
+              Telefone :
               <span class="info" >(necessário)</span>
               <p id="contato"></p>
            <input required id="telefone"  type="number" name="Dia"  onchange="validarTelefone()"  name="Telefone" placeholder="Ex : 98555-5555"></div>
             
            <div class="input-block">
-             Cidade
+             Cidade :
             <input required type="text" class="field" name="Cidade" placeholder="Ex : Pernambuco"></div>
             
             <div class="input-block">
-              Endereço
-            <input required type="text" class="field" name="Endereço" placeholder="Ex : lago">
+              Endereço : 
+            <input required type="number" onchange="pesquisacep()" class="field" name="Endereço" placeholder="Ex : Rua quintino">
           </div>
           
             
