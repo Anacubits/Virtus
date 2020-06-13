@@ -3,11 +3,11 @@ function validarTelefone() {
     let telefone = document.getElementById("telefone").value;
 
     if(telefone.length != 9){
-     document.getElementById("contato").innerText= "telefone inválido";
+     document.getElementById("telefon").innerText= "telefone inválido";
      return false;
 
     }else{
-        document.getElementById("contato").innerText= ""; 
+        document.getElementById("telefone").innerText= ""; 
     }
 
 
