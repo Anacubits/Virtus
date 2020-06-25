@@ -7,16 +7,15 @@
 
     <title>Virtus</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/Cadastro_organoizaçoes.css" />
-    <script src=".././virtus/script/validacoesVoluntarios.js" ></script>
+    <link rel="stylesheet" href="css/loginVoluntarios.css" />
 
   </head>
   <body>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Raleway&display=swap" rel="stylesheet">
-
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Raleway&display=swap" rel="stylesheet">
+
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -54,53 +53,25 @@
         </ul>
       </div>
     </nav>
-    <section class="form-section">
-      <div class="form-wrapper">
-        <form name="form1" action="enviar" method="post">
-     <h1>Cadastro de organizações</h1>
 
-     <br>
-     <div class="input-block">
-      E-mail :
-      <p id="E-mail"></p>
-      <input required id ="primeiroEmail" onchange="validarEmail()" type="email" class="field" name="E-mail" placeholder="Ex : julie@gmail.com"  
-      tabindex="5"></div>
-      <div class="input-block">
-        <div class="input-block">
-          <input required id="segundoEmail" onchange="validarEmail()" type="email" class="field" name="E-mail" placeholder="Ex : Confime seu E-mail" ></div>
-         Crie uma senha :
-         <p id="senha"></p>
-          <input required id="primeiraSenha"  type="password" class="field" name="Senha" onchange="validarSenha()" placeholder="Ex : Digite uma senha" minlength="5" maxlength="5">        
-          <input required id="segundaSenha" type="password" class="field" name="Senha" onchange="validarSenha()" placeholder="Ex : Digite novamente a senha" minlength="5" maxlength="5">        
-      <br>
-      <div class="input-block">
-        Cnpj :
-        <p id="cnpj"></p>
-      <input required id="Cnpj" onchange="validarCnpj()" type="number" class="field" name="CNPJ" placeholder="Ex : 02. 000. 852/852-36"></div>
-      
-      <div class="input-block">
-        Telefone :
-        <span class="info" >(necessário)</span>
-        <p id="contato"></p>
-     <input required id="telefone"  type="number" name="Dia"  onchange="validarTelefone()"  name="Telefone" placeholder="Ex : 98555-5555"></div>
-      
-     <div class="input-block">
-       Cidade :
-      <input required type="text" class="field" name="Cidade" placeholder="Ex : Pernambuco"></div>
-      
-      <div class="input-block">
-        Endereço : 
-      <input required type="number" onchange="pesquisacep()" class="field" name="Endereço" placeholder="Ex : Rua quintino">
-    </div>
-            <div class="input-block">
-              Razão social :
-            <textarea class="field" name="mesage" placeholder="Razão Social"></textarea>
-            </div>
-            <button type="submit" class="btn-cadastro">Cadastrar</button> 
+    <section class="form-section">
+
+
+      <div class="form-wrapper">
+        <form action="">
+          <div class="input-block">
+            <h1>Login Organizações</h1>
+            <label for="login-email">Email</label>
+            <input required type="email" id="login-email" placeholder="Juliane@gmail.com" />
+          </div>
+          <div class="input-block">
+            <label required for="login-password">Senha</label>
+            <input type="password" id="login-password" placeholder="*********"/>
+          </div>
+          <button type="submit" class="btn-login">Login</button>
         </form>
       </div>
     </section>
-
     
 
 
